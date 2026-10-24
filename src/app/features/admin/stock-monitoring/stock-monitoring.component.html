@@ -1,0 +1,63 @@
+<app-navbar></app-navbar>
+
+<div class="stock-monitoring-container">
+  <button class="back-button" (click)="goBack()" i18n="@@backButton">← Back</button>
+
+  <div class="filter-bar">
+    <label for="categoryFilter" i18n>Filter by Category:</label>
+    <select id="categoryFilter" [(ngModel)]="selectedCategory" (change)="onCategoryChange(selectedCategory)">
+      <option value="" i18n>All Categories</option>
+      <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+    </select>
+ 
+    <!-- Filtre de stock -->
+    <label for="stockFilter" i18n>Filter by Stock:</label>
+    <select id="stockFilter" [(ngModel)]="selectedStockStatus">
+      <option value="" i18n>All</option>
+      <option value="low" i18n>Low Stock</option>
+      <option value="out" i18n>Out of Stock</option>
+      <option value="restocked" i18n>Recently Restocked</option>
+    </select>
+  </div>
+
+  <div *ngFor="let product of filteredProducts" class="product-item"
+    [ngClass]="stockService.getStockStatusClass(product)">
+
+    <img [src]="product.getProductImage()" alt="{{product.getProductTitle()}}" class="product-image" />
+
+    <div class="product-info">
+      <h3>{{ product.getProductTitle() }}</h3>
+      <p>
+        <span i18n="@@categoryLabel">Category:</span> {{ product.getProductCategory() }}
+      </p>
+      <p>
+        <span i18n="@@priceLabel">Price:</span>$ {{ product.getProductPrice() }}
+      </p>
+      <p>
+        <span i18n="@@quantityInStockLabel">Quantity in Stock:</span> {{ product.getProductQuantity() }}
+        <!-- Stock Status Banner -->
+        <span class="stock-banner" [ngClass]="stockService.getStockStatusClass(product)">
+          {{ stockService.getStockMessage(product) }}
+        </span>
+      </p>
+      <p *ngIf="product.getRestockDate()">
+        <span i18n="@@lastRestockedLabel">Last Restocked:</span> {{ product.getRestockDate() | date:'short' }}
+      </p>
+    </div>
+
+    <!-- Quantity input + Restock & Empty buttons -->
+    <div class="actions">
+      <input type="number" min="1" [ngModel]="getRestockQty(product.getProductId())"
+        (ngModelChange)="setRestockQty(product.getProductId(), $event)" placeholder="Quantity to Restock"
+        i18n-placeholder="@@restockQuantityPlaceholder" />
+
+      <button (click)="restock(product.getProductId())" i18n="@@restockButton">
+        Restock
+      </button>
+
+      <button class="danger" (click)="emptyStock(product.getProductId())" i18n>
+        Empty Stock
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,253 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: var(--color-page);
+  color: #222;
+}
+
+/* Main layout */
+.site-main {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Sidebar filters */
+.sidebar-filters {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sidebar-filters h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: black;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 8px;
+}
+
+.sidebar-filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-filters li {
+  margin-bottom: 12px;
+}
+
+.sidebar-filters a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #444;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.sidebar-filters a.button:hover,
+.sidebar-filters a.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+/* Products grid */
+.products-grid {
+  flex-grow: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  min-height: 500px;
+}
+
+.products-grid h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #222;
+}
+
+.products-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  gap: 15px;
+}
+
+.products-grid li {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+  transition: box-shadow 0.2s ease;
+  min-height: 20px;
+  justify-content: space-between;
+}
+
+.products-grid li:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.products-grid img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.product-buttons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.product-buttons button {
+  flex-grow: 1;
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-buttons button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.restock-badge {
+  margin-left: 8px;
+  padding: 3px 8px;
+  background-color: #28a745; /* green */
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.low-stock-message {
+  margin-left: 8px;
+  padding: 3px 8px;
+  background-color: #dc3545; /* red */
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.offers-banner {
+  background-color: var(--color-primary-soft);
+  padding: 25px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.offers-banner h2 {
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.offer-card {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 220px;
+  text-align: left;
+  border-left: 4px solid var(--color-primary);
+}
+
+.offer-card h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.offer-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.offer-card strong {
+  color: #28a745;
+  font-size: 18px;
+}
+
+.offer-type {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #f0f0f0;
+  color: #444;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.offers-banner small {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+  font-size: 0.85em;
+}
+
+.product-item {
+  position: relative;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ff4136;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+}

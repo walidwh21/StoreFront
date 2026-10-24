@@ -1,0 +1,90 @@
+<app-navbar></app-navbar>
+
+<main class="site-main">
+  <!-- Sidebar with tabs on the left -->
+  <aside class="sidebar-filters tabs">
+    <h4 i18n>My Profile</h4>
+    <button [class.active-tab]="selectedTab === 'personal'" (click)="selectedTab = 'personal'" i18n="tab label|Personal info tab">Personal Info</button>
+    <button [class.active-tab]="selectedTab === 'bank'" (click)="selectedTab = 'bank'" i18n="tab label|Bank info tab">Bank Info</button>
+    <button [class.active-tab]="selectedTab === 'orders'" (click)="selectedTab = 'orders'" i18n="tab label|Orders tab">Orders</button>
+    <div *ngIf="user?.getUserType() === 'admin'" class="admin-button-container">
+      <button (click)="goToStockMonitoring()" i18n>Stock Monitoring</button>
+      <br/>
+      <button (click)="goToOfferManagement()" i18n>Offer Management</button>
+      <br/>
+      <button (click)="goToUserManagement()" i18n>User Management</button>
+    </div>
+  </aside>
+
+  <!-- Content area on the right -->
+  <section class="profile-section">
+    <!-- Personal -->
+    <div *ngIf="selectedTab === 'personal' && user">
+      <h3 i18n>Personal Information</h3>
+      <div *ngIf="!editPersonal">
+        <p><span i18n>Name:</span> {{ user.getFullName() }}</p>
+        <p><span i18n>Email:</span> {{ user.getEmail() }}</p>
+        <p><span i18n>Phone:</span> {{ user.getPhone() }}</p>
+        <button (click)="editPersonal = true" i18n>Edit</button>
+      </div>
+      <form *ngIf="editPersonal" (ngSubmit)="savePersonalInfo()">
+        <span i18n>Name: </span>
+        <input [(ngModel)]="fullName" name="name" required />
+        <br />
+        <span i18n>Email: </span>
+        <input [(ngModel)]="email" name="email" required />
+        <br />
+        <span i18n>Phone: </span>
+        <input [(ngModel)]="phone" name="phone" />
+        <button type="submit" i18n>Save</button>
+      </form>
+    </div>
+
+    <!-- Bank -->
+    <div *ngIf="selectedTab === 'bank' && user">
+      <h3 i18n>Bank Information</h3>
+      <div *ngIf="!editBank">
+        <p><span i18n>IBAN:</span> {{ user.getIban() || 'none' }}</p>
+        <p><span i18n>Bank:</span> {{ user.getBankName() || 'none' }}</p>
+        <button (click)="editBank = true" i18n>Edit</button>
+      </div>
+      <form *ngIf="editBank" (ngSubmit)="saveBankInfo()">
+        <span i18n>IBAN: </span>
+        <input [(ngModel)]="iban" name="iban" required />
+        <br />
+        <span i18n>Bank: </span>
+        <input [(ngModel)]="bankName" name="bankName" required />
+        <button type="submit" i18n>Save</button>
+      </form>
+    </div>
+
+    <!-- Orders -->
+    <div *ngIf="selectedTab === 'orders'">
+      <h3 i18n>Order History</h3>
+      <ul *ngIf="orders.length > 0; else noOrders">
+        <li *ngFor="let order of orders" class="order-item">
+          <strong i18n="Order label">Order:</strong>
+          <a [routerLink]="['/order-details', order.getOrderId()]">{{ order.getOrderId() }}</a><br />
+          <strong i18n="Total label">Total:</strong> {{ order.getTotalPrice() }} MAD<br />
+          <strong i18n="Delivery label">Delivery:</strong>
+          <span *ngIf="order.getDeliveryAddress().description; else showCoords">
+            {{ order.getDeliveryAddress().description }}
+          </span>
+          <ng-template #showCoords>
+            <span i18n="Latitude label">Latitude:</span> {{ order.getDeliveryAddress().lat }},
+            <span i18n="Longitude label">Longitude:</span> {{ order.getDeliveryAddress().lng }}
+          </ng-template><br />
+          <strong i18n="Date label">Date:</strong> {{ order.getCreatedAt() | date:'medium' }}<br />
+          <strong i18n="Status label">Status:</strong>
+          <span class="status" [ngClass]="order.getStatus().toLowerCase()">
+            {{ order.getStatus() }}
+          </span>
+          <hr />
+        </li>
+      </ul>
+      <ng-template #noOrders>
+        <p i18n>No orders placed yet.</p>
+      </ng-template>
+    </div>
+  </section>
+</main>

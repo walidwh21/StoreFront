@@ -1,0 +1,22 @@
+[
+  {
+    "userId": "usr-admin-0001",
+    "userType": "admin",
+    "fullName": "Admin User",
+    "email": "admin@example.com",
+    "password": "scrypt$85a82e40862ac1f52eeda2c7d6142b41$259720353cb3a6ff8de0bd7d173c58c10609c8b6fda9ed10665971e82078813a082967251242c2c1a1a99892512470f92240516a480cbd8cdf98b79dd4d82544",
+    "iban": "",
+    "bankName": "Demo Bank",
+    "phone": 0
+  },
+  {
+    "userId": "usr-member-0001",
+    "userType": "member",
+    "fullName": "Jane Member",
+    "email": "member@example.com",
+    "password": "scrypt$0941be9597d99a114a9662499e875224$1debb74bf3e9047e73f1444b9982a3cb4aef898929340883fa63824df452cbfc207dd2414aa17c4089f7b47099747deff961ef28a01c9cab88f1b1fd8ff42b6a",
+    "iban": "",
+    "bankName": "Demo Bank",
+    "phone": 0
+  }
+]

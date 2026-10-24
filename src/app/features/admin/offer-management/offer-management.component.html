@@ -1,0 +1,124 @@
+<app-navbar></app-navbar>
+
+<button class="back-button" (click)="goBack()" i18n>← Back</button>
+<h2 i18n>Offer Management</h2>
+
+<form [formGroup]="offerForm" (ngSubmit)="submitForm()">
+  <div class="form-row">
+    <div class="form-group">
+      <label i18n>Title *</label>
+      <input formControlName="title" type="text" required />
+    </div>
+
+    <div class="form-group">
+      <label i18n>Offer Type *</label>
+      <select formControlName="type" required>
+        <option value="special offer" i18n>Special Offer</option>
+        <option value="promotion" i18n>Promotion</option>
+        <option value="discount" i18n>Discount</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label i18n>Discount (%) *</label>
+      <input formControlName="discountPercent" type="number" min="0" max="100" required />
+    </div>
+
+    <div class="form-group">
+      <label i18n>Active</label>
+      <input formControlName="active" type="checkbox" />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label i18n>Start Date *</label>
+      <input formControlName="startDate" type="date" required />
+    </div>
+
+    <div class="form-group">
+      <label i18n>End Date *</label>
+      <input formControlName="endDate" type="date" required />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group" style="flex: 1 1 100%;">
+      <label i18n>Description</label>
+      <textarea formControlName="description"></textarea>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label i18n>Filter by Category</label>
+      <select formControlName="selectedCategory">
+        <option value="" i18n>All Categories</option>
+        <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+      </select>
+    </div>
+
+    <div class="form-group checkbox-row">
+      <label>
+        <input type="checkbox" [checked]="isAllSelected()" (change)="toggleSelectAll($event)" />
+        <span i18n>Select All</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group" style="flex: 1 1 100%;">
+      <label i18n>Selected Products</label>
+      <select formControlName="productIds" multiple size="5">
+        <option *ngFor="let p of filteredProducts" [value]="p.getProductId()" [ngClass]="{
+          'outside-category': p.getProductCategory() !== offerForm.get('selectedCategory')?.value
+        }">
+          {{ p.getProductTitle() }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-buttons">
+    <button type="submit" [disabled]="offerForm.invalid">
+      {{ editingOffer ? 'Update' : 'Add' }}
+    </button>
+    <button type="button" (click)="resetForm()" i18n>Cancel</button>
+  </div>
+</form>
+
+<hr />
+
+<table class="offer-table">
+  <thead>
+    <tr>
+      <th i18n>Title</th>
+      <th i18n>Description</th>
+      <th i18n>Discount (%)</th>
+      <th i18n>Start</th>
+      <th i18n>End</th>
+      <th i18n>Status</th>
+      <th i18n>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let offer of offers">
+      <td>{{ offer.getTitle() }}</td>
+      <td>{{ offer.getDescription() || '–' }}</td>
+      <td>{{ offer.getDiscountPercent() }}%</td>
+      <td>{{ offer.getStartDate() | date:'shortDate' }}</td>
+      <td>{{ offer.getEndDate() | date:'shortDate' }}</td>
+      <td>
+        <span [ngClass]="offer.isActive() ? 'status-active' : 'status-inactive'">
+          {{ offer.isActive() ? 'Active' : 'Inactive' }}
+        </span>
+      </td>
+      <td>
+        <button (click)="editOffer(offer)" i18n>Edit</button>
+        <button class="danger" (click)="deleteOffer(offer.getId()!)" i18n>Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

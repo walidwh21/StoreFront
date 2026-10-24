@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+
+<main class="site-main">
+  <aside class="sidebar-filters">
+    <h4 i18n>Categories</h4>
+    <ul>
+      <li>
+        <a routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="button" i18n>
+          All
+        </a>
+      </li>
+      <li *ngFor="let category of categories">
+        <a routerLink="/catalog" [queryParams]="{ filter: category }" routerLinkActive="active" class="button">
+          {{ category }}
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <section class="products-grid">
+    <div *ngIf="activeOffers.length > 0" class="offers-banner">
+      <h2 i18n>Current Offers</h2>
+      <div class="offers-list">
+        <div class="offer-card" *ngFor="let offer of activeOffers">
+          <h4>{{ offer.getTitle() }}</h4>
+          <p>{{ offer.getDescription() }}</p>
+          <strong>-{{ offer.getDiscountPercent() }}%</strong>
+          <span class="offer-type">{{ offer.getType() }}</span>
+          <small i18n>Until {{ offer.getEndDate() | date }}</small>
+        </div>
+      </div>
+    </div>
+
+    <h3 i18n>Product List</h3>
+    <ul>
+      <ng-container *ngFor="let product of products">
+        <li *ngIf="product.getProductQuantity() > 0">
+          <span *ngIf="hasDiscount(product)" class="badge" i18n>Sale</span>
+
+          <img [src]="product.getProductImage()" alt="{{ product.getProductTitle() }}" width="80" height="80" />
+
+          <h4>{{ product.getProductTitle() }}</h4>
+
+          <!-- Price with discount -->
+          <p *ngIf="hasDiscount(product); else normalPrice">
+            <del>$ {{ product.getProductPrice() }}</del>
+            <span style="color: #28a745; font-weight: bold;">
+              $ {{ getDiscountedPrice(product) | number:'1.2-2' }}
+            </span>
+          </p>
+          <ng-template #normalPrice>
+            <p>$ {{ product.getProductPrice() }}</p>
+          </ng-template>
+
+          <!-- Stock message -->
+          <span *ngIf="stockService.getStockMessage(product)" [ngClass]="{
+                'low-stock-message': stockService.isLowStock(product),
+                'restock-badge': !stockService.isLowStock(product) && stockService.isRecentlyRestocked(product)
+              }">
+            {{ stockService.getStockMessage(product) }}
+          </span>
+
+          <!-- Buttons -->
+          <div class="product-buttons">
+            <button (click)="goToProductDetails(product)" i18n>Details</button>
+            <button (click)="addToCart(product)" i18n>Add to Cart</button>
+          </div>
+        </li>
+      </ng-container>
+    </ul>
+  </section>
+</main>

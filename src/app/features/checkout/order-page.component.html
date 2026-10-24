@@ -1,0 +1,58 @@
+<div class="order-confirmation" *ngIf="!orderConfirmed; else thankYou">
+  <h2 i18n>Order Confirmation</h2>
+
+  <p><strong i18n>Total Products:</strong>$ {{ cart.totalPrice || 0 }}</p>
+  <p><strong i18n>Shipping Fee:</strong>$ {{ shippingFee }}</p>
+  <p><strong i18n>Total to Pay:</strong>$ {{ totalWithShipping }}</p>
+
+  <hr />
+
+  <h3 i18n>Payment Method</h3>
+  <select [(ngModel)]="paymentMethod" required>
+    <option value="" disabled selected i18n>Select a method</option>
+    <option value="cash" i18n>Cash on Delivery</option>
+    <option value="card" i18n>Credit Card</option>
+  </select>
+
+  <hr />
+
+  <h3 i18n>Delivery Address</h3>
+
+  <label>
+    <input type="radio" name="addressMode" [(ngModel)]="useAddressString" [value]="false" />
+    <span i18n>Select on Map</span>
+  </label>
+  <label>
+    <input type="radio" name="addressMode" [(ngModel)]="useAddressString" [value]="true" />
+    <span i18n>Enter Address</span>
+  </label>
+
+  <div *ngIf="useAddressString; else mapMode">
+    <input type="text" placeholder="Enter your address" i18n-placeholder [(ngModel)]="addressString" required />
+  </div>
+
+  <ng-template #mapMode>
+    <app-map class="map" [latitude]="address.lat" [longitude]="address.lng"
+      (locationChanged)="onLocationChanged($event)">
+    </app-map>
+  </ng-template>
+
+  <hr />
+
+  <div class="actions">
+    <button (click)="goBackToCart()" i18n>Edit Cart</button>
+    <button (click)="confirmOrder()" i18n>Confirm Order</button>
+  </div>
+</div>
+
+<ng-template #thankYou>
+  <div class="thank-you-message">
+    <h2 i18n>Thank you for your order!</h2>
+    <p i18n>Your order has been confirmed and will be delivered to the following address:</p>
+    <p><strong>{{ deliveryAddressDisplay }}</strong></p>
+    <p i18n>Payment Method:
+      <strong>{{ paymentMethod === 'cash' ? 'Cash on Delivery' : 'Credit Card' }}</strong>
+    </p>
+    <button (click)="goBackToCart()" i18n>Go Back</button>
+  </div>
+</ng-template>

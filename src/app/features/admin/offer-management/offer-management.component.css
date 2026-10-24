@@ -1,0 +1,294 @@
+/* Titre principal */
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+form {
+  background: white;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 25px 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  color: #222;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary-ring);
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.checkbox-row {
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Table des offres */
+.offer-table {
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.offer-table thead {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.offer-table th,
+.offer-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.offer-table tbody tr:hover {
+  background-color: var(--color-primary-soft);
+}
+
+.offer-table td button {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.offer-table td button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.offer-table td button.danger {
+  background-color: #888;
+}
+
+.offer-table td button.danger:hover {
+  background-color: #555;
+}
+
+.status-active {
+  background-color: #28a745;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-inactive {
+  background-color: #6c757d;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .offer-table {
+    font-size: 14px;
+  }
+
+  .offer-table th,
+  .offer-table td {
+    padding: 10px;
+  }
+
+  .offer-table td button {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form, ul {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.back-button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 8px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 25px 0 15px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  width: auto;
+}
+
+.back-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+select[multiple] {
+  height: auto;
+  min-height: 120px;
+  padding: 6px;
+}
+
+/* Label checkbox (ex: Tout sélectionner) */
+form div label input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Style du select multiple (produits concernés) */
+select[multiple] {
+  height: auto;
+  min-height: 120px;
+  padding: 8px 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #222;
+  background-color: white;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+select[multiple]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary-ring);
+}
+
+/* Alignement des divs avec label et input en ligne (ex: checkbox "Active") */
+form div.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Pour que le bouton annuler soit un peu à part */
+form button[type="button"] {
+  margin-top: 8px;
+}
+
+/* Amélioration responsive pour formulaire */
+@media (max-width: 480px) {
+  form {
+    padding: 15px 20px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  select[multiple] {
+    min-height: 100px;
+  }
+}
+
+option.outside-category {
+  color: #999;
+  font-style: italic;
+}

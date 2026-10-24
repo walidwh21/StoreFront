@@ -1,0 +1,82 @@
+<h2 i18n="@@cartTitle">My Cart</h2>
+
+<div class="cart-content">
+  <div *ngIf="cart.itemsProduct.length > 0; else emptyCart">
+    <table>
+      <thead>
+        <tr>
+          <th i18n="@@tableHeaderProduct">Product</th>
+          <th i18n="@@tableHeaderQuantity">Quantity</th>
+          <th i18n="@@tableHeaderPrice">Price</th>
+          <th i18n="@@tableHeaderTotal">Total</th>
+          <th i18n="@@tableHeaderActions">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cart.itemsProduct">
+          <td>{{ item.itemProduct.getProductTitle() }}</td>
+          <td>
+            <button 
+              (click)="decreaseQuantity(item.itemProduct.getProductId())"
+              i18n-aria-label="@@decreaseQuantityBtn"
+              aria-label="Decrease quantity"
+            >-</button>
+            {{ item.quantity }}
+            <button 
+              (click)="increaseQuantity(item.itemProduct.getProductId())"
+              [disabled]="item.quantity >= item.itemProduct.getProductQuantity()"
+              [ngStyle]="{
+                backgroundColor: item.quantity >= item.itemProduct.getProductQuantity() ? '#ccc' : 'var(--color-primary)',
+                color: item.quantity >= item.itemProduct.getProductQuantity() ? '#666' : 'white',
+                cursor: item.quantity >= item.itemProduct.getProductQuantity() ? 'not-allowed' : 'pointer'
+              }"
+              i18n-aria-label="@@increaseQuantityBtn"
+              aria-label="Increase quantity"
+            >+</button>
+            <!-- Stock message -->
+            <p *ngIf="stockService.getStockMessage(item.itemProduct)" [ngClass]="{
+                  'low-stock-message': stockService.isLowStock(item.itemProduct),
+                  'restock-badge': !stockService.isLowStock(item.itemProduct) && stockService.isRecentlyRestocked(item.itemProduct)
+                }">
+              {{ stockService.getStockMessage(item.itemProduct) }}
+            </p>
+          </td>
+          <td>
+            <!-- Price with discount -->
+            <p *ngIf="hasDiscount(item.itemProduct); else normalPrice">
+              <del>$ {{ item.itemProduct.getProductPrice() }}</del>
+              <span style="color: #28a745; font-weight: bold; display: flex; flex-direction: column;">
+                $ {{ getDiscountedPrice(item.itemProduct) | number:'1.2-2' }}
+              </span>
+            </p>
+            <ng-template #normalPrice>
+              <p>$ {{ item.itemProduct.getProductPrice() }}</p>
+            </ng-template>
+          </td>
+          <td>$ {{ (item.quantity * item.price) | number:'1.2-2' }}</td>
+          <td>
+            <button 
+              class="remove-btn" 
+              (click)="remove(item.itemProduct.getProductId())"
+              i18n-aria-label="@@removeItemBtn"
+              aria-label="Remove item"
+            >✕</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <p><strong i18n="@@totalProductsLabel">Total Products:</strong> {{ cart.totalItems }}</p>
+    <p><strong i18n="@@totalToPayLabel">Total to Pay:</strong>$  {{ cart.totalPrice }}</p>
+
+    <div class="cart-actions">
+      <button class="secondary" (click)="clearCart()" i18n="@@emptyCartBtn">Empty Cart</button>
+      <button (click)="checkout()" i18n="@@checkoutBtn">Checkout</button>
+    </div>
+  </div>
+
+  <ng-template #emptyCart>
+    <p i18n="@@emptyCartMessage">Your cart is empty.</p>
+  </ng-template>
+</div>

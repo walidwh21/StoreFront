@@ -1,0 +1,121 @@
+[
+  {
+    "orderId": "6102bca8-05ce-47a3-a3a2-f053684d3437",
+    "userId": "usr-member-0001",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 1,
+        "price": 9.99
+      },
+      {
+        "productId": "9",
+        "quantity": 3,
+        "price": 62.99099999999999
+      },
+      {
+        "productId": "14",
+        "quantity": 2,
+        "price": 499.99
+      }
+    ],
+    "paymentMethod": "cash",
+    "deliveryAddress": {
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "description": "Sample delivery address"
+    },
+    "shippingFee": 60,
+    "totalPrice": 1258.943,
+    "orderDate": "2025-06-19T20:25:31.194Z",
+    "status": "pending"
+  },
+  {
+    "orderId": "4859e74e-ed82-43b5-9452-51cb81ab80be",
+    "userId": "usr-member-0001",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 2,
+        "price": 9.99
+      },
+      {
+        "productId": "6",
+        "quantity": 1,
+        "price": 44.991
+      },
+      {
+        "productId": "10",
+        "quantity": 1,
+        "price": 71.991
+      }
+    ],
+    "paymentMethod": "cash",
+    "deliveryAddress": {
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "description": "Sample delivery address"
+    },
+    "shippingFee": 60,
+    "totalPrice": 196.962,
+    "orderDate": "2025-06-20T16:51:16.505Z",
+    "status": "pending"
+  },
+  {
+    "orderId": "02c40cf9-bbf1-4eb9-b2ba-477a8910e30a",
+    "userId": "usr-member-0001",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 1,
+        "price": 9.99
+      },
+      {
+        "productId": "6",
+        "quantity": 1,
+        "price": 44.991
+      },
+      {
+        "productId": "5",
+        "quantity": 2,
+        "price": 8.99
+      }
+    ],
+    "paymentMethod": "cash",
+    "deliveryAddress": {
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "description": "Sample delivery address"
+    },
+    "shippingFee": 60,
+    "totalPrice": 132.961,
+    "orderDate": "2025-06-20T16:56:24.522Z",
+    "status": "pending"
+  },
+  {
+    "orderId": "6d6976b7-e7c6-4045-bbfb-c601c41d3a01",
+    "userId": "usr-member-0001",
+    "items": [
+      {
+        "productId": "1",
+        "quantity": 3,
+        "price": 9.99
+      },
+      {
+        "productId": "6",
+        "quantity": 1,
+        "price": 44.991
+      }
+    ],
+    "paymentMethod": "cash",
+    "deliveryAddress": {
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "description": "Sample delivery address"
+    },
+    "shippingFee": 60,
+    "totalPrice": 134.961,
+    "orderDate": "2025-06-20T17:19:02.531Z",
+    "status": "pending"
+  }
+]

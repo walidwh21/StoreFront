@@ -1,0 +1,223 @@
+.stock-monitoring-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.stock-monitoring-container h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 8px;
+}
+
+.product-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.product-item:last-child {
+  border-bottom: none;
+}
+
+.product-item:hover {
+  background-color: #fafafa;
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #222;
+}
+
+.product-info p {
+  margin: 3px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.product-info p:last-child {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+}
+
+input[type="number"] {
+  width: 90px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px;
+  user-select: none;
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+button:disabled {
+  background-color: var(--color-primary-translucent);
+  cursor: not-allowed;
+}
+
+/* Responsive pour écrans plus petits */
+@media (max-width: 600px) {
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  input[type="number"] {
+    width: 100%;
+  }
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-bar label {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.filter-bar select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-bar select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary-ring);
+}
+
+@media (max-width: 600px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .filter-bar select {
+    width: 100%;
+  }
+}
+
+.stock-banner {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.low-stock .stock-banner {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.out-stock .stock-banner {
+  background-color: #dc3545;
+  color: white;
+}
+
+.restocked .stock-banner {
+  background-color: #28a745;
+  color: white;
+}
+
+button.danger {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.danger:hover {
+  background-color: #495057;
+}

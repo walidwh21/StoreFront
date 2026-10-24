@@ -1,0 +1,43 @@
+.alert-box {
+  position: fixed;
+  left: 20px;
+  width: 300px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  z-index: 9999;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  user-select: none;
+  transition: opacity 0.3s ease;
+}
+
+.success {
+  background-color: #4CAF50;
+}
+
+.error {
+  background-color: #f44336;
+}
+
+.info {
+  background-color: #2196F3;
+}
+
+.warning {
+  background-color: #ff9800;
+}
+
+.alert-box button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+  vertical-align: middle;
+  float: right;
+  padding: 0;
+  user-select: none;
+}

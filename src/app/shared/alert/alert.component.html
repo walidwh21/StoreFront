@@ -1,0 +1,7 @@
+<div *ngFor="let alert of alerts; let i = index"
+     [ngClass]="cssClass(alert.type)" 
+     class="alert-box"
+     [style.top.px]="20 + i * 60">
+  {{ alert.message }}
+  <button (click)="close(alert)">×</button>
+</div>

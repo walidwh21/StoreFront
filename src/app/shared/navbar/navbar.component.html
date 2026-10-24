@@ -1,0 +1,52 @@
+<header class="site-header">
+  <!-- Logo -->
+  <div class="logo">
+    <img class="logo-img" src="/assets/images/logo.png" />
+    <a routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" i18n>
+      MyShop
+    </a>
+  </div>
+
+  <!-- Search + User Menu container -->
+  <div class="header-right">
+    <!-- Search -->
+    <div class="search-wrapper" *ngIf="shouldShowSearch()">
+      <app-search-bar (search)="onSearch($event)"></app-search-bar>
+    </div>
+
+    <!-- User menu -->
+    <div class="user-menu">
+      <a *ngIf="!(user$ | async)" routerLink="/signin" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }" class="button" i18n>
+        Sign In / Sign Up
+      </a>
+
+      <a href="#" i18n>Help</a>
+
+      <button class="cart" (click)="toggleCart()" i18n>
+        Cart ({{ cartItemCount }})
+      </button>
+
+      <a *ngIf="user$ | async" routerLink="/profile" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        i18n>
+        My Profile
+      </a>
+
+      <button *ngIf="user$ | async" class="cart" (click)="signOut()" i18n>
+        Sign Out
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Only render if showCart is true -->
+<div *ngIf="showCart">
+  <!-- Overlay -->
+  <div class="modal-overlay" (click)="toggleCart()"></div>
+
+  <!-- Modal content -->
+  <div class="cart-modal">
+    <app-shopping-cart></app-shopping-cart>
+    <button class="close-btn" (click)="toggleCart()">×</button>
+  </div>
+</div>

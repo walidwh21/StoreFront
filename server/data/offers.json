@@ -1,0 +1,46 @@
+[
+  {
+    "id": "71b5411c-96a2-4a38-88e7-410b67a6fa0a",
+    "title": "Summer Sale !",
+    "description": "Enjoy 20% off on a selection of products to celebrate summer!",
+    "discountPercent": 20,
+    "startDate": "2026-01-01T00:00:00.000Z",
+    "endDate": "2030-12-31T00:00:00.000Z",
+    "active": true,
+    "type": "discount",
+    "productIds": [
+      "162",
+      "163",
+      "164",
+      "165",
+      "166",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "154",
+      "155",
+      "156",
+      "157",
+      "158"
+    ]
+  },
+  {
+    "id": "17f57079-b6f1-4d54-9755-72525a81c5ef",
+    "title": "New Product Launch Offer",
+    "description": "Get 10% off to celebrate the release of our new fragrance.",
+    "discountPercent": 10,
+    "startDate": "2026-01-01T00:00:00.000Z",
+    "endDate": "2030-12-31T00:00:00.000Z",
+    "active": true,
+    "type": "special offer",
+    "productIds": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  }
+]

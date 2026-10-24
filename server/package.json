@@ -1,0 +1,22 @@
+{
+  "name": "storefront-api",
+  "version": "1.0.0",
+  "description": "REST API for the Storefront Angular app (JSON-file storage, cookie-based JWT auth)",
+  "main": "src/index.js",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "import:products": "node scripts/import-products.mjs",
+    "hash-password": "node scripts/hash-password.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

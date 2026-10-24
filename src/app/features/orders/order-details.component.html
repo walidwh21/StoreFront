@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<main class="site-main">
+  <button class="back-button" (click)="goBack()" i18n>← Back</button>
+
+  <!-- Order Details -->
+  <section class="order-details-left" *ngIf="order">
+    <h2 i18n>Order Details</h2>
+    <p><strong i18n>ID:</strong> {{ order.getOrderId() }}</p>
+    <p><strong i18n>Date:</strong> {{ order.getCreatedAt() | date: 'short' }}</p>
+    <p>
+      <strong i18n>Status:</strong>
+      <span class="status-badge" [ngClass]="order.getStatus().toLowerCase()">
+        {{ order.getStatus() }}
+      </span>
+    </p>
+    <p><strong i18n>Payment Method:</strong> {{ order.getPaymentMethod() }}</p>
+    <p><strong i18n>Delivery Address:</strong>
+      {{ order.getDeliveryAddress().description || (order.getDeliveryAddress().lat + ', ' + order.getDeliveryAddress().lng) }}
+    </p>
+    <p><strong i18n>Shipping Fee:</strong>$ {{ order.getShippingFee() }} </p>
+    <p><strong i18n>Total:</strong>$ {{ order.getTotalPrice() }} </p>
+  </section>
+
+  <!-- Products -->
+  <section class="product-summary-right" *ngIf="order">
+    <h3 i18n>Products</h3>
+    <div *ngFor="let item of order.getItems().itemsProduct">
+      <div *ngIf="productDetails[item.itemProduct.getProductId()] as product" class="product-item">
+        <p>
+          <strong>{{ product.getProductTitle() }}</strong> ({{ item.quantity }}x) -
+          <span *ngIf="item.price !== undefined">
+            <ng-container *ngIf="item.price < product.getProductPrice(); else normalPrice">
+              <del> $ {{ product.getProductPrice() }}</del>
+              &nbsp;
+              <span style="color: #28a745; font-weight: bold;">$ {{ item.price }}</span>
+              <span class="badge-discount" i18n>Discount applied</span>
+            </ng-container>
+            <ng-template #normalPrice> $ {{ item.price }}</ng-template>
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div *ngIf="isLoading">
+  <p i18n>Loading details...</p>
+</div>

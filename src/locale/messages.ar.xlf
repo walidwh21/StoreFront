@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="ar" date="2025-06-20T14:32:58Z">
+    <body>
+      <trans-unit id="1902100407096396858" datatype="html">
+        <source>Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <target>فئات</target>
+      </trans-unit>
+      <trans-unit id="8386976308507652568" datatype="html">
+        <source> All </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <target> الجميع </target>
+      </trans-unit>
+      <trans-unit id="3213252281295283029" datatype="html">
+        <source>Current Offers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <target>العروض الحالية</target>
+      </trans-unit>
+      <trans-unit id="1536850590587257204" datatype="html">
+        <source>Until <x id="INTERPOLATION" equiv-text="{{ offer.getEndDate() | date }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <target>حتى <x id="INTERPOLATION" equiv-text="{{ offer.getEndDate() | date }}"/> </target>
+      </trans-unit>
+      <trans-unit id="3973779881505033160" datatype="html">
+        <source>Product List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <target>قائمة المنتج</target>
+      </trans-unit>
+      <trans-unit id="2765811755265161003" datatype="html">
+        <source>Sale</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+        <target>أُوكَازيُون</target>
+      </trans-unit>
+      <trans-unit id="5028777105388019087" datatype="html">
+        <source>Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <target>تفاصيل</target>
+      </trans-unit>
+      <trans-unit id="1358803443456357055" datatype="html">
+        <source>Add to Cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/catalog/catalog.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <target>أضف إلى السلة</target>
+      </trans-unit>
+      <trans-unit id="2990018873122443600" datatype="html">
+        <source> MyShop </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <target> myshop </target>
+      </trans-unit>
+      <trans-unit id="5194990988308578108" datatype="html">
+        <source> Sign In / Sign Up </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <target> تسجيل الدخول / التسجيل </target>
+      </trans-unit>
+      <trans-unit id="7911416166208830577" datatype="html">
+        <source>Help</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+        <target>يساعد</target>
+      </trans-unit>
+      <trans-unit id="7375119483608398213" datatype="html">
+        <source> Cart ( <x id="INTERPOLATION" equiv-text="{{ cartItemCount }}"/>) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <target> عربة (عربة <x id="INTERPOLATION" equiv-text="{{ cartItemCount }}"/>) </target>
+      </trans-unit>
+      <trans-unit id="7265534728124496062" datatype="html">
+        <source> My Profile </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <target> ملفي الشخصي </target>
+      </trans-unit>
+      <trans-unit id="1428384729921254001" datatype="html">
+        <source> Sign Out </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/navbar/navbar.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <target> تسجيل الخروج </target>
+      </trans-unit>
+      <trans-unit id="6019653417900340937" datatype="html">
+        <source>← Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+        <target>← العودة</target>
+      </trans-unit>
+      <trans-unit id="3562481360089992444" datatype="html">
+        <source>Offer Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <target>عرض الإدارة</target>
+      </trans-unit>
+      <trans-unit id="8974035579928699212" datatype="html">
+        <source>Title *</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <target>عنوان *</target>
+      </trans-unit>
+      <trans-unit id="4903643887507304483" datatype="html">
+        <source>Offer Type *</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <target>نوع العرض *</target>
+      </trans-unit>
+      <trans-unit id="3457635379685186517" datatype="html">
+        <source>Special Offer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <target>عرض خاص</target>
+      </trans-unit>
+      <trans-unit id="2693455583384082674" datatype="html">
+        <source>Promotion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <target>ترقية</target>
+      </trans-unit>
+      <trans-unit id="4808411315981120788" datatype="html">
+        <source>Discount</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <target>تخفيض</target>
+      </trans-unit>
+      <trans-unit id="2377075054701330706" datatype="html">
+        <source>Discount (%) *</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <target>تخفيض (٪) *</target>
+      </trans-unit>
+      <trans-unit id="8204176479746810612" datatype="html">
+        <source>Active</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <target>نشيط</target>
+      </trans-unit>
+      <trans-unit id="8009190706907233520" datatype="html">
+        <source>Start Date *</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <target>تاريخ البدء *</target>
+      </trans-unit>
+      <trans-unit id="4689550097642060354" datatype="html">
+        <source>End Date *</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <target>تاريخ الانتهاء *</target>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+        <target>وصف</target>
+      </trans-unit>
+      <trans-unit id="4095719924885338783" datatype="html">
+        <source>Filter by Category</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <target>تصفية حسب الفئة</target>
+      </trans-unit>
+      <trans-unit id="221922226324249098" datatype="html">
+        <source>All Categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <target>جميع الفئات</target>
+      </trans-unit>
+      <trans-unit id="8716359834484489616" datatype="html">
+        <source>Select All</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <target>حدد كل شيء</target>
+      </trans-unit>
+      <trans-unit id="4186558932365555160" datatype="html">
+        <source>Selected Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <target>منتجات مختارة</target>
+      </trans-unit>
+      <trans-unit id="2159130950882492111" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+        <target>يلغي</target>
+      </trans-unit>
+      <trans-unit id="5701618810648052610" datatype="html">
+        <source>Title</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+        <target>عنوان</target>
+      </trans-unit>
+      <trans-unit id="6131874190146381475" datatype="html">
+        <source>Discount (%)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+        <target>تخفيض (٪)</target>
+      </trans-unit>
+      <trans-unit id="5162686434580248853" datatype="html">
+        <source>Start</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+        <target>يبدأ</target>
+      </trans-unit>
+      <trans-unit id="1241348629231510663" datatype="html">
+        <source>End</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+        <target>نهاية</target>
+      </trans-unit>
+      <trans-unit id="5611592591303869712" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+        <target>حالة</target>
+      </trans-unit>
+      <trans-unit id="3193976279273491157" datatype="html">
+        <source>Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+        <target>الإجراءات</target>
+      </trans-unit>
+      <trans-unit id="7585826646011739428" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">119,120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <target>يحرر</target>
+      </trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/offer-management/offer-management.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+        <target>يمسح</target>
+      </trans-unit>
+      <trans-unit id="2954756221793137916" datatype="html">
+        <source>Order Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <target>طلب تفاصيل</target>
+      </trans-unit>
+      <trans-unit id="1074038423230804155" datatype="html">
+        <source>ID:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <target>بطاقة تعريف:</target>
+      </trans-unit>
+      <trans-unit id="6899410641137821757" datatype="html">
+        <source>Date:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <target>تاريخ:</target>
+      </trans-unit>
+      <trans-unit id="8766543515727166681" datatype="html">
+        <source>Status:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+        <target>حالة:</target>
+      </trans-unit>
+      <trans-unit id="3406427686875607925" datatype="html">
+        <source>Payment Method:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <target>طريقة الدفع:</target>
+      </trans-unit>
+      <trans-unit id="8304867117536002645" datatype="html">
+        <source>Delivery Address:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <target>عنوان التسليم:</target>
+      </trans-unit>
+      <trans-unit id="2291690559376380183" datatype="html">
+        <source>Shipping Fee:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <target>رسوم الشحن:</target>
+      </trans-unit>
+      <trans-unit id="7349530031233006058" datatype="html">
+        <source>Total:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <target>المجموع:</target>
+      </trans-unit>
+      <trans-unit id="6707361102856436710" datatype="html">
+        <source>Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <target>منتجات</target>
+      </trans-unit>
+      <trans-unit id="1024349115950305182" datatype="html">
+        <source>Discount applied</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <target>خصم تطبيق</target>
+      </trans-unit>
+      <trans-unit id="5007468210162027205" datatype="html">
+        <source>Loading details...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/orders/order-details.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <target>تفاصيل التحميل ...</target>
+      </trans-unit>
+      <trans-unit id="1907445263502005893" datatype="html">
+        <source>Order Confirmation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <target>تأكيد الطلب</target>
+      </trans-unit>
+      <trans-unit id="4843295829675203809" datatype="html">
+        <source>Total Products:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <target>إجمالي المنتجات:</target>
+      </trans-unit>
+      <trans-unit id="7715653095533713051" datatype="html">
+        <source>Total to Pay:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <target>إجمالي الدفع:</target>
+      </trans-unit>
+      <trans-unit id="5815412745800320040" datatype="html">
+        <source>Payment Method</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <target>طريقة الدفع</target>
+      </trans-unit>
+      <trans-unit id="1612922555580698214" datatype="html">
+        <source>Select a method</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <target>حدد طريقة</target>
+      </trans-unit>
+      <trans-unit id="1890950502063224279" datatype="html">
+        <source>Cash on Delivery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <target>النقد عند التسليم</target>
+      </trans-unit>
+      <trans-unit id="354593708610051347" datatype="html">
+        <source>Credit Card</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <target>بطاقة إئتمان</target>
+      </trans-unit>
+      <trans-unit id="146994184472820478" datatype="html">
+        <source>Delivery Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+        <target>عنوان التسليم</target>
+      </trans-unit>
+      <trans-unit id="4185000344036682352" datatype="html">
+        <source>Select on Map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <target>حدد على الخريطة</target>
+      </trans-unit>
+      <trans-unit id="9080817940058096410" datatype="html">
+        <source>Enter Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <target>أدخل العنوان</target>
+      </trans-unit>
+      <trans-unit id="4665600283516531962" datatype="html">
+        <source>Enter your address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <target>أدخل عنوانك</target>
+      </trans-unit>
+      <trans-unit id="2159431878631619742" datatype="html">
+        <source>Edit Cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <target>تحرير العربة</target>
+      </trans-unit>
+      <trans-unit id="8773589899410325652" datatype="html">
+        <source>Confirm Order</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <target>تأكيد الأمر</target>
+      </trans-unit>
+      <trans-unit id="9009266459055690039" datatype="html">
+        <source>Thank you for your order!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <target>شكرا لك على طلبك!</target>
+      </trans-unit>
+      <trans-unit id="487224417490281973" datatype="html">
+        <source>Your order has been confirmed and will be delivered to the following address:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <target>تم تأكيد طلبك وسيتم تسليمه إلى العنوان التالي:</target>
+      </trans-unit>
+      <trans-unit id="74271087073858269" datatype="html">
+        <source>Payment Method: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/> <x id="INTERPOLATION" equiv-text="{{ paymentMethod === &apos;cash&apos; ? &apos;Cash on Delivery&apos; : &apos;Credit Card&apos; }}"/> <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">53,56</context>
+        </context-group>
+        <target>طريقة الدفع: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/> <x id="INTERPOLATION" equiv-text="{{ paymentMethod === &apos;cash&apos; ? &apos;Cash on Delivery&apos; : &apos;Credit Card&apos; }}"/> <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> </target>
+      </trans-unit>
+      <trans-unit id="2960246622843217026" datatype="html">
+        <source>Go Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/checkout/order-page.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <target>عُد</target>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source>
+          <x id="INTERPOLATION" equiv-text="{{ product.getProductTitle() }}"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/product-details/product-details.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+        <source>
+          <x id="INTERPOLATION" equiv-text="{{ product.getProductTitle() }}"/>
+        </source>
+      </trans-unit>
+      <trans-unit id="3232472279486785546" datatype="html">
+        <source>Quantity in stock:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/product-details/product-details.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <target>الكمية في المخزون:</target>
+      </trans-unit>
+      <trans-unit id="7501118874506324997" datatype="html">
+        <source>Category:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/product-details/product-details.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <target>فئة:</target>
+      </trans-unit>
+      <trans-unit id="7556595986915232343" datatype="html">
+        <source> Add to Cart </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/product-details/product-details.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <target> أضف إلى السلة </target>
+      </trans-unit>
+      <trans-unit id="2127032578120864096" datatype="html">
+        <source>My Profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <target>ملفي الشخصي</target>
+      </trans-unit>
+      <trans-unit id="449991682176214093" datatype="html">
+        <source>Personal Info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <note priority="1" from="description">Personal info tab</note>
+        <note priority="1" from="meaning">tab label</note>
+        <target>معلومات شخصية</target>
+      </trans-unit>
+      <trans-unit id="5902273998992418341" datatype="html">
+        <source>Bank Info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <note priority="1" from="description">Bank info tab</note>
+        <note priority="1" from="meaning">tab label</note>
+        <target>معلومات البنك</target>
+      </trans-unit>
+      <trans-unit id="1600866193972288643" datatype="html">
+        <source>Orders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <note priority="1" from="description">Orders tab</note>
+        <note priority="1" from="meaning">tab label</note>
+        <target>طلبات</target>
+      </trans-unit>
+      <trans-unit id="3254095220409839342" datatype="html">
+        <source>Stock Monitoring</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <target>مراقبة الأسهم</target>
+      </trans-unit>
+      <trans-unit id="2550377588620126747" datatype="html">
+        <source>User Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <target>إدارة المستخدم</target>
+      </trans-unit>
+      <trans-unit id="3465962430409924123" datatype="html">
+        <source>Personal Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <target>معلومات شخصية</target>
+      </trans-unit>
+      <trans-unit id="7658402240953727096" datatype="html">
+        <source>Name:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <target>اسم:</target>
+      </trans-unit>
+      <trans-unit id="6631334172623029500" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <target>بريد إلكتروني:</target>
+      </trans-unit>
+      <trans-unit id="4378227938065070603" datatype="html">
+        <source>Phone:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <target>هاتف:</target>
+      </trans-unit>
+      <trans-unit id="402785015655073812" datatype="html">
+        <source>Name: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <target>اسم: </target>
+      </trans-unit>
+      <trans-unit id="4374589633190318100" datatype="html">
+        <source>Email: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <target>بريد إلكتروني: </target>
+      </trans-unit>
+      <trans-unit id="2052559695041471325" datatype="html">
+        <source>Phone: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <target>هاتف: </target>
+      </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+        <target>يحفظ</target>
+      </trans-unit>
+      <trans-unit id="4000790593988350667" datatype="html">
+        <source>Bank Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <target>معلومات البنك</target>
+      </trans-unit>
+      <trans-unit id="5100331470034442313" datatype="html">
+        <source>IBAN:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <target>إيبان:</target>
+      </trans-unit>
+      <trans-unit id="6029153214884959129" datatype="html">
+        <source>Bank:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <target>بنك:</target>
+      </trans-unit>
+      <trans-unit id="2603500086771044720" datatype="html">
+        <source>IBAN: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <target>إيبان: </target>
+      </trans-unit>
+      <trans-unit id="7904604327160701195" datatype="html">
+        <source>Bank: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <target>بنك: </target>
+      </trans-unit>
+      <trans-unit id="4514809632108169779" datatype="html">
+        <source>Order History</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <target>تاريخ النظام</target>
+      </trans-unit>
+      <trans-unit id="7496435375050672049" datatype="html">
+        <source>Order:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <note priority="1" from="description">Order label</note>
+        <target>طلب:</target>
+      </trans-unit>
+      <trans-unit id="4023909883401736097" datatype="html">
+        <source>Delivery:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <note priority="1" from="description">Delivery label</note>
+        <target>توصيل:</target>
+      </trans-unit>
+      <trans-unit id="6691856122567960400" datatype="html">
+        <source>Latitude:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="description">Latitude label</note>
+        <target>خط العرض:</target>
+      </trans-unit>
+      <trans-unit id="1113549170516305374" datatype="html">
+        <source>Longitude:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description">Longitude label</note>
+        <target>خط الطول:</target>
+      </trans-unit>
+      <trans-unit id="1227769479653785700" datatype="html">
+        <source>No orders placed yet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/profile/profile.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+        <target>لم يتم وضع أوامر بعد.</target>
+      </trans-unit>
+      <trans-unit id="cartTitle" datatype="html">
+        <source>My Cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+        <target>عربتي</target>
+      </trans-unit>
+      <trans-unit id="tableHeaderProduct" datatype="html">
+        <source>Product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <target>منتج</target>
+      </trans-unit>
+      <trans-unit id="tableHeaderQuantity" datatype="html">
+        <source>Quantity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <target>كمية</target>
+      </trans-unit>
+      <trans-unit id="tableHeaderPrice" datatype="html">
+        <source>Price</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <target>سعر</target>
+      </trans-unit>
+      <trans-unit id="tableHeaderTotal" datatype="html">
+        <source>Total</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <target>المجموع</target>
+      </trans-unit>
+      <trans-unit id="tableHeaderActions" datatype="html">
+        <source>Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+        <target>الإجراءات</target>
+      </trans-unit>
+      <trans-unit id="decreaseQuantityBtn" datatype="html">
+        <source>Decrease quantity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+        <target>تقليل الكمية</target>
+      </trans-unit>
+      <trans-unit id="increaseQuantityBtn" datatype="html">
+        <source>Increase quantity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+        <target>زيادة الكمية</target>
+      </trans-unit>
+      <trans-unit id="removeItemBtn" datatype="html">
+        <source>Remove item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+        <target>إزالة العنصر</target>
+      </trans-unit>
+      <trans-unit id="totalProductsLabel" datatype="html">
+        <source>Total Products:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <target>إجمالي المنتجات:</target>
+      </trans-unit>
+      <trans-unit id="totalToPayLabel" datatype="html">
+        <source>Total to Pay:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <target>إجمالي الدفع:</target>
+      </trans-unit>
+      <trans-unit id="emptyCartBtn" datatype="html">
+        <source>Empty Cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+        <target>عربة فارغة</target>
+      </trans-unit>
+      <trans-unit id="checkoutBtn" datatype="html">
+        <source>Checkout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">75,77</context>
+        </context-group>
+        <target>الدفع</target>
+      </trans-unit>
+      <trans-unit id="emptyCartMessage" datatype="html">
+        <source>Your cart is empty.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cart/shopping-cart.component.html</context>
+          <context context-type="linenumber">80,82</context>
+        </context-group>
+        <target>عربة التسوق الخاصة بك فارغة.</target>
+      </trans-unit>
+      <trans-unit id="signInTitle" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <target>تسجيل الدخول</target>
+      </trans-unit>
+      <trans-unit id="signInSubtitle" datatype="html">
+        <source>to discover more...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+        <target>لاكتشاف المزيد ...</target>
+      </trans-unit>
+      <trans-unit id="emailPlaceholder" datatype="html">
+        <source>Email Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <target>عنوان البريد الإلكتروني</target>
+      </trans-unit>
+      <trans-unit id="emailRequiredError" datatype="html">
+        <source>Email is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <target>البريد الإلكتروني مطلوب</target>
+      </trans-unit>
+      <trans-unit id="emailFormatError" datatype="html">
+        <source>Must be a valid email format</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">21,25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">35,38</context>
+        </context-group>
+        <target>يجب أن يكون تنسيق بريد إلكتروني صالح</target>
+      </trans-unit>
+      <trans-unit id="passwordPlaceholder" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <target>كلمة المرور</target>
+      </trans-unit>
+      <trans-unit id="passwordRequiredError" datatype="html">
+        <source>Password is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">35,38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <target>كلمة المرور مطلوبة</target>
+      </trans-unit>
+      <trans-unit id="signInButton" datatype="html">
+        <source> Sign In </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+        <target> تسجيل الدخول </target>
+      </trans-unit>
+      <trans-unit id="noAccountText" datatype="html">
+        <source> Don’t have an account yet? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signup&quot; routerLinkActive=&quot;active&quot; [routerLinkActiveOptions]=&quot;{exact:true}&quot;&gt;"/> Sign up to get started! <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signin/signin.component.html</context>
+          <context context-type="linenumber">49,52</context>
+        </context-group>
+        <target> ليس لديك حساب بعد؟ <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signup&quot; routerLinkActive=&quot;active&quot; [routerLinkActiveOptions]=&quot;{exact:true}&quot;&gt;"/> اشترك للبدء! <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> </target>
+      </trans-unit>
+      <trans-unit id="signUpTitle" datatype="html">
+        <source>Sign Up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <target>اشتراك</target>
+      </trans-unit>
+      <trans-unit id="signUpSubtitle" datatype="html">
+        <source>Create your account to get started...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+        <target>أنشئ حسابك للبدء ...</target>
+      </trans-unit>
+      <trans-unit id="fullNamePlaceholder" datatype="html">
+        <source>Full Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <target>الاسم الكامل</target>
+      </trans-unit>
+      <trans-unit id="fullNameRequiredError" datatype="html">
+        <source> Full name is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
+        <target> مطلوب الاسم الكامل </target>
+      </trans-unit>
+      <trans-unit id="passwordMinLengthError" datatype="html">
+        <source>Password must be at least 6 characters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">49,52</context>
+        </context-group>
+        <target>يجب أن تكون كلمة المرور 6 أحرف على الأقل</target>
+      </trans-unit>
+      <trans-unit id="confirmPasswordPlaceholder" datatype="html">
+        <source>Confirm Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+        <target>تأكيد كلمة المرور</target>
+      </trans-unit>
+      <trans-unit id="confirmPasswordError" datatype="html">
+        <source> Passwords must match </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">62,65</context>
+        </context-group>
+        <target> يجب أن تتطابق كلمات المرور </target>
+      </trans-unit>
+      <trans-unit id="signUpButton" datatype="html">
+        <source> Sign Up </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+        <target> اشتراك </target>
+      </trans-unit>
+      <trans-unit id="alreadyHaveAccountText" datatype="html">
+        <source> Already have an account? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signin&quot; routerLinkActive=&quot;active&quot; [routerLinkActiveOptions]=&quot;{exact:true}&quot;&gt;"/> Sign in here! <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">72,75</context>
+        </context-group>
+        <target> هل لديك بالفعل حساب؟ <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signin&quot; routerLinkActive=&quot;active&quot; [routerLinkActiveOptions]=&quot;{exact:true}&quot;&gt;"/> تسجيل الدخول هنا! <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> </target>
+      </trans-unit>
+      <trans-unit id="signUpSuccessMessage" datatype="html">
+        <source>Signup successful! You can now </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+        <target>الاشتراك الناجح! يمكنك الآن </target>
+      </trans-unit>
+      <trans-unit id="signInLink" datatype="html">
+        <source>sign in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/signup/signup.component.html</context>
+          <context context-type="linenumber">80,82</context>
+        </context-group>
+        <target>تسجيل الدخول</target>
+      </trans-unit>
+      <trans-unit id="backButton" datatype="html">
+        <source>← Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <target>← العودة</target>
+      </trans-unit>
+      <trans-unit id="3135863211850041600" datatype="html">
+        <source>Filter by Category:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <target>تصفية حسب الفئة:</target>
+      </trans-unit>
+      <trans-unit id="6957641941100078727" datatype="html">
+        <source>Filter by Stock:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <target>تصفية حسب الأسهم:</target>
+      </trans-unit>
+      <trans-unit id="1616102757855967475" datatype="html">
+        <source>All</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <target>الجميع</target>
+      </trans-unit>
+      <trans-unit id="2447410334552520706" datatype="html">
+        <source>Low Stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <target>انخفاض الأسهم</target>
+      </trans-unit>
+      <trans-unit id="1836549981104910073" datatype="html">
+        <source>Out of Stock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <target>إنتهى من المخزن</target>
+      </trans-unit>
+      <trans-unit id="4577666535320994359" datatype="html">
+        <source>Recently Restocked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <target>تم إعادة تخزينها مؤخرًا</target>
+      </trans-unit>
+      <trans-unit id="categoryLabel" datatype="html">
+        <source>Category:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <target>فئة:</target>
+      </trans-unit>
+      <trans-unit id="priceLabel" datatype="html">
+        <source>Price:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <target>سعر:</target>
+      </trans-unit>
+      <trans-unit id="quantityInStockLabel" datatype="html">
+        <source>Quantity in Stock:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <target>الكمية في المخزون:</target>
+      </trans-unit>
+      <trans-unit id="lastRestockedLabel" datatype="html">
+        <source>Last Restocked:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <target>آخر إعادة تخزين:</target>
+      </trans-unit>
+      <trans-unit id="restockQuantityPlaceholder" datatype="html">
+        <source>Quantity to Restock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <target>كمية لإعادة التخزين</target>
+      </trans-unit>
+      <trans-unit id="restockButton" datatype="html">
+        <source> Restock </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+        <target> إعادة التخزين </target>
+      </trans-unit>
+      <trans-unit id="3405197996265549541" datatype="html">
+        <source> Empty Stock </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/stock-monitoring/stock-monitoring.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <target> مخزون فارغ </target>
+      </trans-unit>
+      <trans-unit id="userManagementTitle" datatype="html">
+        <source>User Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <target>إدارة المستخدم</target>
+      </trans-unit>
+      <trans-unit id="addUserTitle" datatype="html">
+        <source>Add User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <target>أضف المستخدم</target>
+      </trans-unit>
+      <trans-unit id="userTypeLabel" datatype="html">
+        <source>User Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <target>نوع المستخدم</target>
+      </trans-unit>
+      <trans-unit id="adminOption" datatype="html">
+        <source>Admin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+        <target>مسؤل</target>
+      </trans-unit>
+      <trans-unit id="memberOption" datatype="html">
+        <source>Member</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+        <target>عضو</target>
+      </trans-unit>
+      <trans-unit id="guestOption" datatype="html">
+        <source>Guest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+        <target>ضيف</target>
+      </trans-unit>
+      <trans-unit id="addButton" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+        <target>يضيف</target>
+      </trans-unit>
+      <trans-unit id="editUserTitle" datatype="html">
+        <source>Edit User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+        <target>تحرير المستخدم</target>
+      </trans-unit>
+      <trans-unit id="ibanPlaceholder" datatype="html">
+        <source>IBAN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <target>إيبان</target>
+      </trans-unit>
+      <trans-unit id="bankPlaceholder" datatype="html">
+        <source>Bank</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <target>بنك</target>
+      </trans-unit>
+      <trans-unit id="phonePlaceholder" datatype="html">
+        <source>Phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <target>هاتف</target>
+      </trans-unit>
+      <trans-unit id="updateButton" datatype="html">
+        <source>Update</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+        <target>تحديث</target>
+      </trans-unit>
+      <trans-unit id="cancelButton" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+        <target>يلغي</target>
+      </trans-unit>
+      <trans-unit id="nameHeader" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <target>اسم</target>
+      </trans-unit>
+      <trans-unit id="emailHeader" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <target>بريد إلكتروني</target>
+      </trans-unit>
+      <trans-unit id="typeHeader" datatype="html">
+        <source>Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <target>يكتب</target>
+      </trans-unit>
+      <trans-unit id="actionsHeader" datatype="html">
+        <source>Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">54,56</context>
+        </context-group>
+        <target>الإجراءات</target>
+      </trans-unit>
+      <trans-unit id="editButton" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+        <target>يحرر</target>
+      </trans-unit>
+      <trans-unit id="deleteButton" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/admin/user-management/user-management.component.html</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+        <target>يمسح</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

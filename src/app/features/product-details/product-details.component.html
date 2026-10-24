@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+
+<div *ngIf="product" class="product-details">
+  <img [src]="product.getProductImage()" alt="{{ product.getProductTitle() }}">
+
+  <div class="product-info">
+    <h3 i18n>{{ product.getProductTitle() }}</h3>
+
+    <!-- Price with discount -->
+    <p *ngIf="hasDiscount(product); else normalPrice">
+      <del>$ {{ product.getProductPrice() }}</del>
+      <span style="color: #28a745; font-weight: bold;">
+        $ {{ getDiscountedPrice(product) | number:'1.2-2' }}
+      </span>
+    </p>
+    <ng-template #normalPrice>
+      <p>$ {{ product.getProductPrice() }}</p>
+    </ng-template>
+
+    <p *ngIf="product.getProductQuantity() > 0" [ngClass]="{'stock': true, 'low': product.getProductQuantity() < 10}">
+      <strong i18n>Quantity in stock:</strong> {{ product.getProductQuantity() }}
+    </p>
+
+    <p><strong i18n>Category:</strong> {{ product.getProductCategory() }}</p>
+
+    <p>
+      <span *ngIf="stockService.getStockMessage(product)" [ngClass]="{
+        'low-stock-message': stockService.isLowStock(product),
+        'restock-badge': !stockService.isLowStock(product) && stockService.isRecentlyRestocked(product)
+      }">
+        {{ stockService.getStockMessage(product) }}
+      </span>
+    </p>
+
+    <button class="add-cart" (click)="addToCart()" [disabled]="product.getProductQuantity() === 0" i18n>
+      Add to Cart
+    </button>
+  </div>
+</div>

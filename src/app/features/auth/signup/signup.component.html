@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <form #signUpForm="ngForm" class="form" (ngSubmit)="signUp()">
+    <img class="logo" src="/assets/images/logo.png" alt="Logo" />
+    <div class="sign-in" i18n="@@signUpTitle">Sign Up</div>
+    <div class="sub-text" i18n="@@signUpSubtitle">Create your account to get started...</div>
+
+    <input
+      name="fullName"
+      required
+      [(ngModel)]="credentials.fullName"
+      #fullName="ngModel"
+      placeholder="Full Name"
+      type="text"
+      autocomplete="name"
+      i18n-placeholder="@@fullNamePlaceholder"
+    />
+    <em class="error" *ngIf="fullName.errors?.['required'] && fullName.touched" i18n="@@fullNameRequiredError">
+      Full name is required
+    </em>
+    
+    <input
+      name="email"
+      required
+      email
+      #email="ngModel"
+      [(ngModel)]="credentials.email"
+      placeholder="Email Address"
+      type="text"
+      autocomplete="email"
+      i18n-placeholder="@@emailPlaceholder"
+    />
+    <em class="error" *ngIf="email.errors?.['required'] && email.touched" i18n="@@emailRequiredError">Email is required</em>
+    <em class="error" *ngIf="email.errors?.['email'] && email.touched" i18n="@@emailFormatError">Must be a valid email format</em>
+
+    <input
+      name="password"
+      required
+      minlength="6"
+      #password="ngModel"
+      [(ngModel)]="credentials.password"
+      placeholder="Password"
+      type="password"
+      autocomplete="new-password"
+      i18n-placeholder="@@passwordPlaceholder"
+    />
+    <em class="error" *ngIf="password.errors?.['required'] && password.touched" i18n="@@passwordRequiredError">Password is required</em>
+    <em class="error" *ngIf="password.errors?.['minlength'] && password.touched" i18n="@@passwordMinLengthError">Password must be at least 6 characters</em>
+
+    <input
+      name="confirmPassword"
+      required
+      [(ngModel)]="confirmPassword"
+      placeholder="Confirm Password"
+      type="password"
+      autocomplete="new-password"
+      (blur)="confirmPasswordTouched = true"
+      i18n-placeholder="@@confirmPasswordPlaceholder"
+    />
+    <em class="error" *ngIf="confirmPasswordError && confirmPasswordTouched" i18n="@@confirmPasswordError">
+      Passwords must match
+    </em>
+
+    <div class="buttons">
+      <button type="submit" [disabled]="signUpForm.invalid || confirmPasswordError" class="button cta" i18n="@@signUpButton">
+        Sign Up
+      </button>
+    </div>
+
+    <div class="login-link" i18n="@@alreadyHaveAccountText">
+      Already have an account?
+      <a routerLink="/signin" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> Sign in here!</a>
+    </div>
+
+    <div class="signInError" *ngIf="signUpError" aria-live="polite">{{ signUpError }}</div>
+
+    <div class="signInSuccess" *ngIf="signUpSuccess" aria-live="polite">
+      <span i18n="@@signUpSuccessMessage">Signup successful! You can now </span>
+      <a routerLink="/signin" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" i18n="@@signInLink">sign in</a>.
+    </div>
+  </form>
+</div>

@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+
+<button class="back-button" (click)="goBack()" i18n="@@backButton">← Back</button>
+<h2 i18n="@@userManagementTitle">User Management</h2>
+
+<div class="form-container">
+
+  <!-- Add User Form: visible only if no user is selected -->
+  <div *ngIf="!selectedUser" class="form add-user-form">
+    <h3 i18n="@@addUserTitle">Add User</h3>
+    <input [(ngModel)]="newUser.fullName" placeholder="Full Name" i18n-placeholder="@@fullNamePlaceholder" />
+    <input [(ngModel)]="newUser.email" placeholder="Email" i18n-placeholder="@@emailPlaceholder" />
+    <input [(ngModel)]="newUser.password" placeholder="Password" type="password" i18n-placeholder="@@passwordPlaceholder" />
+
+    <select [(ngModel)]="newUser.userType" aria-label="User Type" i18n-aria-label="@@userTypeLabel">
+      <option [value]="'admin'" i18n="@@adminOption">Admin</option>
+      <option [value]="'member'" i18n="@@memberOption">Member</option>
+      <option [value]="'guest'" i18n="@@guestOption">Guest</option>
+    </select>
+
+    <button (click)="addUser()" i18n="@@addButton">Add</button>
+  </div>
+
+  <!-- Edit User Form: visible only if a user is selected -->
+  <div *ngIf="selectedUser" class="form edit-user-form">
+    <h3 i18n="@@editUserTitle">Edit User</h3>
+
+    <input [(ngModel)]="selectedUserCopy.fullName" placeholder="Full Name" i18n-placeholder="@@fullNamePlaceholder" />
+    <input [(ngModel)]="selectedUserCopy.email" placeholder="Email" i18n-placeholder="@@emailPlaceholder" />
+    <input [(ngModel)]="selectedUserCopy.iban" placeholder="IBAN" i18n-placeholder="@@ibanPlaceholder" />
+    <input [(ngModel)]="selectedUserCopy.bankName" placeholder="Bank" i18n-placeholder="@@bankPlaceholder" />
+    <input [(ngModel)]="selectedUserCopy.phone" placeholder="Phone" type="number" i18n-placeholder="@@phonePlaceholder" />
+
+    <select [(ngModel)]="selectedUserCopy.userType" aria-label="User Type" i18n-aria-label="@@userTypeLabel">
+      <option [value]="'admin'" i18n="@@adminOption">Admin</option>
+      <option [value]="'member'" i18n="@@memberOption">Member</option>
+    </select>
+
+    <div class="actions-buttons" style="display: flex; gap: 10px;">
+      <button style="flex:1" (click)="updateUser()" i18n="@@updateButton">Update</button>
+      <button style="flex:1" (click)="cancelEdit()" i18n="@@cancelButton">Cancel</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- User List -->
+<table class="user-table">
+  <thead>
+    <tr>
+      <th i18n="@@nameHeader">Name</th>
+      <th i18n="@@emailHeader">Email</th>
+      <th i18n="@@typeHeader">Type</th>
+      <th i18n="@@actionsHeader">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.getFullName() }}</td>
+      <td>{{ user.getEmail() }}</td>
+      <td>{{ user.getUserType() }}</td>
+      <td>
+        <button (click)="selectUser(user)" i18n="@@editButton">Edit</button>
+        <button (click)="deleteUser(user.getUserId())" i18n="@@deleteButton">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
